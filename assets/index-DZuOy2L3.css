@@ -1,0 +1,1 @@
+.card{max-width:250px;display:inline-block;border:1px solid gray;background-color:pink}.card img{width:100%;object-fit:cover}.card-desc{display:flex;flex-direction:column;align-items:center}.btn-container{display:flex;justify-content:space-between;gap:.25rem}.btn{border:1px solid grey;padding:.25rem}
