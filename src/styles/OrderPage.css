@@ -1,0 +1,36 @@
+
+
+.order-page{
+  padding: 1rem;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Tamale List */
+.tamale-list {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile-first design */
+    gap: 3rem;
+   
+  }
+  
+  
+  /* Responsive Design */
+  @media (min-width: 600px) {
+    .tamale-list {
+      grid-template-columns: 1fr 1fr; /* Two columns for medium screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .tamale-list {
+      width: 80%;
+      margin: 4rem auto;
+      grid-template-columns: repeat(3, 1fr); /* Three columns for large screens */
+      gap: 5rem; /* Increase spacing between items */
+    }
+  }
+  
+  

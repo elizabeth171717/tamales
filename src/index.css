@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+ 
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+
+  /* Primary and Secondary Colors */
+  :root {
+    --primary-color: #9D0759; /* Primary color */
+    --secondary-color: #303030; /* Secondary color */
+    --light-grey-color: #cfcfcf;
+    --white: #ffffff;
+    --black: #000000;
+    --primary-font:'Berkshire Swash', sans-serif;
+    --secondary-font:'Agradir Wide', sans-serif;
+  }
+  
+
+ 
+   /* Global Font Styles */
+   body {
+    font-family: var(--secondary-font);
+    background-color: var(--light-grey-color); /* Light background for a clean look */
+    color:var(--secondary-color) ; /* Default text color - secondary */
+    line-height: 1.6;
+    
+  }
+  
+  
+
+  /* Buttons */
+  button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    border: .25rem solid white;
+  }
+  
+  button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .section-title{
+    
+    color: var(--white);
+  }

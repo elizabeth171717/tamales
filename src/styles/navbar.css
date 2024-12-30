@@ -1,0 +1,217 @@
+
+
+
+
+/* Base styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo img {
+    width: 150px; /* Adjust the size of your logo */
+    
+  }
+
+  
+  
+  .nav-links-container{
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+
+  }
+
+.nav-links {
+  display: none; /* Hide navigation links by default */
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  background-color: var(--white); /* Navbar background */
+  
+  position: absolute;
+  top: 60px;
+  left: 0;
+  padding: 10px;
+}
+
+.nav-links a {
+    
+  color: var(--secondary-color);
+ 
+}
+
+.nav-links.active {
+  display: flex; /* Show links when active */
+}
+
+
+
+.cart-icon {
+  font-size: 1.3rem;
+}
+
+ /* Social Media Icons */
+ .social-icons {
+  display: flex;
+  gap: .25rem;
+}
+
+.social-icons a {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+ 
+}
+
+
+.hamburger {
+  display: block; /* Display hamburger icon on mobile */
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+}
+
+  /* Mobile-First Styles */
+  @media screen and (min-width: 45rem) {
+  
+    .nav-links-container{
+      
+      display: flex;
+      gap: 3rem;
+      align-items: center;
+     
+
+    }
+    
+    .nav-links {
+      display: flex;
+      position:static;
+      flex-direction: row;
+     background-color: var(--white);
+      gap: 1rem;
+    
+    }
+
+
+    
+    
+    
+    .nav-links li {
+      font-size: 1rem;
+    }
+    
+    .nav-links a {
+    
+      color: var(--secondary-color);
+      font-weight: bold;
+    }
+    
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+
+    .navbar-logo img {
+      width: 180px; /* Adjust the size of your logo */
+      
+    }
+    
+    /* Cart Icon */
+    .cart-icon {
+      position: relative;
+      color: var(--secondary-color);
+      font-size: 1.5rem;
+    }
+    
+    .cart-count {
+      position: absolute;
+      top: -5px;
+      right: -10px;
+      background-color: var(--primary-color);
+      color: var(--white);
+      border-radius: 50%;
+      padding: 5px;
+      font-size: 0.8rem;
+    }
+    /* Social Media Icons */
+ .social-icons {
+ 
+  gap: 1rem;
+}
+
+   
+.social-icons a {
+  font-size: 1.5rem;
+}
+
+    .social-icons a:hover {
+      color: var(--secondary-color); /* You can adjust the hover color */
+    }
+    
+    .hamburger {
+      display: none; /* Hide hamburger icon on desktop */
+    }
+  
+
+  }
+  
+
+  
+  
+  /* Text Slider Styles */
+.text-slider {
+  position: sticky;
+
+  top: 0;
+ left: 0;
+    right: 0;
+  z-index: 1000;
+  background-color: var(--primary-color); /* Light background */
+ /* Dark text */
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.text-slider .slide {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.text-slider .slide:nth-child(1) {
+  animation: fade 8s linear infinite;
+}
+
+.text-slider .slide:nth-child(2) {
+  animation: fade 8s linear infinite 2s;
+}
+
+.text-slider .slide:nth-child(3) {
+  animation: fade 8s linear infinite 4s;
+}
+
+.text-slider .slide:nth-child(4) {
+  animation: fade 8s linear infinite 6s;
+}
+
+/* Fade animation */
+@keyframes fade {
+  0%, 20% { opacity: 1; }
+  25%, 100% { opacity: 0; }
+}

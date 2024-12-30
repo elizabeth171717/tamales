@@ -3,17 +3,14 @@ import "../styles/card.css";
 
 function Card() {
   return (
-    <div className="card">
-      <div className="card-img">
-        <img src={tamaleCardImg} alt="tamale"></img>
-      </div>
-      <div className="card-desc">
-        <h3>card name</h3>
-        <p>card description</p>
-        <div className="btn-container">
-          <div className="btn">add to cart</div>
-          <div className="btn btn-share">Share</div>
-        </div>
+    <div className="tamale-card">
+      <img src={tamaleCardImg} className="tamale-image" />
+      <div className="card-description">
+        <h3>Name</h3>
+        <p>descrition</p>
+        <p>Price per 6: $</p>
+        <p>Amount</p>
+        <p>Total Price: $</p>
       </div>
     </div>
   );

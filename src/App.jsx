@@ -1,14 +1,24 @@
 import "./App.css";
-import Header from "./Components/header";
+import Navbar from "./Components/navbar";
 import Footer from "./Components/footer";
-import Card from "./Components/card";
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/HomePage";
+import OrderPage from "./pages/OrderPage";
 function App() {
   return (
     <>
-      <Header></Header>
-      <Card></Card>
-      <Footer></Footer>
+      <BrowserRouter>
+        <Navbar />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/OrderPage" element={<OrderPage />} />
+        </Routes>
+
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }
